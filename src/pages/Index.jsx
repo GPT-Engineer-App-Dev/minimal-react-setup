@@ -1,5 +1,4 @@
-import { Box, Container, Flex, Text, VStack, Link, Input, Button } from "@chakra-ui/react";
-import { useState } from "react";
+import { Box, Container, Flex, Text, VStack, Link, Button } from "@chakra-ui/react";
 import { useSupabaseAuth, SupabaseAuthUI } from "../integrations/supabase/auth.jsx";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +16,8 @@ const Index = () => {
       <Flex as="nav" bg="blue.500" color="white" padding="1.5rem" justifyContent="space-between">
         <Text fontSize="xl" fontWeight="bold">My Website</Text>
         <Flex>
-          <Link href="#" margin="0 1rem">Home</Link>
+          <Link href="/" margin="0 1rem">Home</Link>
+          <Link href="/protected" margin="0 1rem">Protected</Link>
           <Link href="#" margin="0 1rem">About</Link>
           <Link href="#" margin="0 1rem">Contact</Link>
         </Flex>
